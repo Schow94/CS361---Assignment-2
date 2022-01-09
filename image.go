@@ -3,6 +3,7 @@ package main
 import (
 	"io/ioutil"
 	"os"
+	"path/filepath"
 	"strconv"
 )
 
@@ -51,9 +52,14 @@ func main(){
 	f7, err7:= os.OpenFile("image-service.txt", os.O_RDWR|os.O_CREATE|os.O_TRUNC, 0755)
 	check(err7)
 
+	path, err := os.Getwd()
+	check(err)
+	
+	image_path := filepath.Join(path, string(image))
+
 
 	// Write image path to image-service.txt
-	_, err8 := f7.WriteString(image)
+	_, err8 := f7.WriteString(image_path)
 	check(err8)
 
 

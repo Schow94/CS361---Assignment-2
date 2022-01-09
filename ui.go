@@ -87,7 +87,8 @@ func main(){
 			check(err9)
 			
 			// Display image path to user in terminal
-			fmt.Println("Image: ", string(image))
+			// Change this to a path. Currenlty just displaying the name of the image
+			fmt.Println(string(image))
 
 		}
 
