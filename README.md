@@ -22,3 +22,7 @@ A user interface (UI) that either has a button or can receive a user command. Wh
 - (a) UI calls the PRNG Service
 - (b) UI calls the Image Service using the pseudo-random number from the PRNG Service
 - (c) UI displays the image (or a path to it)
+
+## Run Program
+
+$ go run ui.go
