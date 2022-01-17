@@ -45,7 +45,6 @@ func main(){
 
 	image := images[mod]
 
-	// fmt.Println(reflect.TypeOf(files))
 
 	// Write pseudo-random # to image-service.txt
 	// OpenFile(filename, read/write/create, file permissions)
